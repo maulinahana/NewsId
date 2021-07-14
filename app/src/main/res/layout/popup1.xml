@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/popup_2">
+
+    <TextView
+            android:text="Model Busana yang Harus Dihindari Kerena Bikin Tubuh Kelihatan Gemuk dan Besar "
+            android:layout_width="281dp"
+            android:layout_height="88dp" android:id="@+id/textView"
+            android:layout_marginEnd="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="55dp"
+            android:textAlignment="center" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2" android:textStyle="bold"/>
+    <Button
+            android:text="X"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:id="@+id/backButton"
+            android:layout_marginTop="570dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="274dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintVertical_bias="1.0" android:textSize="24sp"/>
+    <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="527dp" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/backButton" android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintVertical_bias="1.0" android:id="@+id/scrollView2"
+            android:paddingRight="15dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:padding="10dp">
+            <ImageView
+                    android:layout_width="296dp"
+                    android:layout_height="166dp" app:srcCompat="@drawable/thumbnail_fashion_satu"
+                    android:id="@+id/imageView2" android:layout_marginTop="10dp"
+                    android:textAlignment="textStart" android:layout_marginStart="70dp"
+            />
+            <TextView
+                    android:text="Ternyata perpaduan busana dan aksesoris yang tidak tepat dapat mempengaruhi bentuk badan kita loh. Siapa sangka dengan menggunakan perpaduan yang salah dapat membuat kamu terlihat lebih gemuk dan besar dari yang seharusnya. Kalau kamu mau terlihat lebih ramping, tinggi dan kurus nih aku kasih tau model busana yang sebaiknya wajib kamu hindari!"
+                    android:layout_width="305dp"
+                    android:layout_height="169dp" android:id="@+id/textView2" android:visibility="visible"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="126dp"
+                        android:layout_height="225dp" app:srcCompat="@drawable/pic1_fashion_satu"
+                        android:id="@+id/imageView3" android:layout_marginStart="50dp"/>
+                <TextView
+                        android:text="1. Kemeja kebesaran 2 nomor Pakai baju kebesaran itu memang keren dan bisa membuat Anda terlihat fashionable. Namun, jika pemilihan ukurannya salah, maka akan jadi bumerang bagi diri sendiri. Kalau Anda memilih kemeja kebesaran 2 nomor, maka yang ada penamilan Anda malah jadi terlihat gemuk dan besar. "
+                        android:layout_width="198dp"
+                        android:layout_height="216dp" android:id="@+id/textView3" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="2. Baju yang terlalu ketat Mengenakan baju yang terlalu ketat adalah kesalahan besar jika Anda ingin terlihat lebih kurus dan lebih tinggi. Sebaliknya, Anda malah jadi kelihatan gemuk dan besar. Sebab pakaian yang ketat malah akan menonjolkan lemak-lemak di tubuh Anda, yang seharusnya ditutupi. "
+                        android:layout_width="173dp"
+                        android:layout_height="256dp" android:id="@+id/textView4" android:visibility="visible"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+                <ImageView
+                        android:layout_width="287dp"
+                        android:layout_height="227dp" app:srcCompat="@drawable/pic2_fashion_satu"
+                        android:id="@+id/imageView4" android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="131dp"
+                        android:layout_height="183dp" app:srcCompat="@drawable/pic3_fashion_satu"
+                        android:id="@+id/imageView5" android:layout_weight="1" android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"/>
+                <TextView
+                        android:text="3. Skinny jeans Satu yang harus Anda ingat, skinny jeans itu terlihat sempurna dan indah jika dipakai oleh wanita yang kurus. Hanya karena skinny jeans tersedia dalam semua ukuran, bukan berarti itu adalah pilihan busana yang bagus. Pakai skinny jeans justru membuat bagian paha dan pinggul Anda terlihat membesar, lho! "
+                        android:layout_width="174dp"
+                        android:layout_height="267dp" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" app:srcCompat="@drawable/pic4_fashion_satu"
+                        android:id="@+id/imageView6" android:layout_marginStart="50dp"/>
+                <TextView
+                        android:text="4. Celana bermotif Celana bermotif akan menambah volume kaki Anda apapun itu motifnya, terlebih kotak-kotak, garis-garis, dan bunga. Apalagi jika ukurannya pas di badan. Jadi, jika tidak mau tubuh Anda terlihat gemuk dan lebih besar, hindari model celana ini. "
+                        android:layout_width="301dp"
+                        android:layout_height="147dp" android:id="@+id/textView6" android:visibility="visible"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp" app:srcCompat="@drawable/pic5_fashion_satu"
+                        android:id="@+id/imageView7" android:layout_marginStart="50dp"/>
+                <TextView
+                        android:text="5. Baju berbahan jersey Bahan jersey yang ringan dan melar mungkin nyaman tapi ternyata tidak membantu Anda kelihatan sempurna dan ramping. Malahan membuat lekuk tubuh Anda karena benar-benar terlihat semuanya. Bahkan wanita yang tubuhnya sempurna dan langsing pun bisa kelihatan gemuk dan besar karena pakaian dari bahan ini.  "
+                        android:layout_width="308dp"
+                        android:layout_height="159dp" android:id="@+id/textView7" android:visibility="visible"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="364dp" app:srcCompat="@drawable/pic6_fashion_satu"
+                        android:id="@+id/imageView8" android:layout_weight="1" android:layout_marginStart="50dp"/>
+                <TextView
+                        android:text="6. Cropped pants Walau pun celana 3/4 atau celana kulot terasa nyaman dipakai, tetapi Anda harus tahu kalau sebenarnya model celana ini justru memberikan ilusi tubuh terlihat lebih gemuk dan besar. Itu karena cropped pants memotong kaki dari sudut pandang visual, membuat wanita terlihat lebih lebar juga menekankan tubuh pendek bagi wanita mungil. "
+                        android:layout_width="166dp"
+                        android:layout_height="354dp" android:id="@+id/textView8" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="2. Baju yang terlalu ketat Mengenakan baju yang terlalu ketat adalah kesalahan besar jika Anda ingin terlihat lebih kurus dan lebih tinggi. Sebaliknya, Anda malah jadi kelihatan gemuk dan besar. Sebab pakaian yang ketat malah akan menonjolkan lemak-lemak di tubuh Anda, yang seharusnya ditutupi. "
+                        android:layout_width="163dp"
+                        android:layout_height="270dp" android:id="@+id/textView9" android:visibility="visible"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="229dp" app:srcCompat="@drawable/pic7_fashion_satu"
+                        android:id="@+id/imageView9" android:layout_weight="1" android:layout_margin="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <TextView
+                    android:layout_width="307dp"
+                    android:layout_height="100dp" android:id="@+id/textView10" android:visibility="visible"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"
+                    android:text="Yuk, hindari kesalahan pilih busana supaya tidak membuat tubuh terlihat gemuk dan besar di atas. Tampillah dengan busana yang pas dan nyaman di tubuh. Kalau nyaman, rasa percaya diri Anda jadi meningkat, lho!"
+                    android:layout_marginRight="10dp"/>
+            <TextView
+                    android:layout_width="303dp"
+                    android:layout_height="100dp" android:id="@+id/textView11" android:visibility="visible"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"
+                    android:text="Source : https://womantalk.com/fashion/articles/model-busana-yang-harus-dihindari-kerena-bikin-tubuh-kelihatan-gemuk-dan-besar-yaL9X"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

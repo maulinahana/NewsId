@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/popup_2">
+
+    <TextView
+            android:text="Tips OOTD Anti Gerah untuk Musim Panas"
+            android:layout_width="281dp"
+            android:layout_height="88dp" android:id="@+id/textView"
+            android:layout_marginEnd="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="55dp"
+            android:textAlignment="center" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2" android:textStyle="bold"/>
+    <Button
+            android:text="X"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:id="@+id/backButton"
+            android:layout_marginTop="570dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="274dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintVertical_bias="1.0" android:textSize="24sp"/>
+    <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="527dp" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/backButton" android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintVertical_bias="1.0" android:id="@+id/scrollView2"
+            android:paddingRight="15dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:padding="10dp">
+            <ImageView
+                    android:layout_width="296dp"
+                    android:layout_height="166dp" app:srcCompat="@drawable/thumbnail_fashion_tiga"
+                    android:id="@+id/imageView2" android:layout_marginTop="10dp"
+                    android:textAlignment="textStart" android:layout_marginStart="70dp"
+            />
+            <TextView
+                    android:text="Bulan Juni di Indonesia hanya berarti satu hal: Musim panas sudah dimulai dan kita semua harus bersiap untuk yang terburuk… dan dengan “terburuk” maksud saya adalah menahan panas dan terik sinar matahari dan berdoa agar tidak berkeringat terlalu parah. Yah, musim panas memang terkadang dapat mempersulit kegiatan kita sehari-hari karena hawa panas yang bikin gerah dan tidak nyaman. Tapi jangan khawatir, Cosmo sudah menyiapkan sederet solusi yang akan menjamin dirimu tetap nyaman beraktivitas selama musim panas."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:visibility="visible"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="126dp"
+                        android:layout_height="225dp" app:srcCompat="@drawable/pic1_fashion_tiga"
+                        android:id="@+id/imageView3" android:layout_marginStart="50dp" android:layout_gravity="center"/>
+                <TextView
+                        android:text="1. Warna putih dan warna cerah lain adalah sahabat baikmu
+Oldest trick in the book: Usahakan untuk memakai warna cerah seperti putih, kuning, atau pastel. Warna-warna seperti ini akan meminimalisir penyerapan sinar matahari sehingga kamu tidak merasa kepanasan. Tidak hanya itu, warna putih dan warna cerah lainnya memiliki sifat memantulkan cahaya matahari sehingga akan membuatmu terlihat semakin bersinar."
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="2. Pilih material natural
+Pakaian dengan material natural seperti katun dan linen akan memudahkan kulitmu untuk “bernapas” dibandingkan dengan poliester atau rayon. Selain itu, material seperti ini juga dapat menyerap keringat lebih baik dan lebih cepat kering."
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView4" android:visibility="visible"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp" android:gravity="center"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp" app:srcCompat="@drawable/pic2_fashion_tiga"
+                        android:id="@+id/imageView4" android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp" app:srcCompat="@drawable/pic3_fashion_tiga"
+                        android:id="@+id/imageView5" android:layout_weight="1" android:layout_marginStart="50dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:text="3. Pakai pakaian longgar dan dinamis
+Semakin sedikit kain yang menyentuh kulitmu, semakin baik. Percaya atau tidak, gaun musim panas yang longgar akan membuatmu lebih nyaman dibandingkan dengan celana pendek dan tanktop yang ketat."
+                        android:layout_width="174dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp" app:srcCompat="@drawable/pic4_fashion_tiga"
+                        android:id="@+id/imageView5" android:layout_weight="1" android:layout_marginStart="50dp"
+                        android:layout_gravity="center" android:scaleType="fitCenter"/>
+                <TextView
+                        android:text="4. ...Tapi hindai pakaian tanpa struktur
+Pakaian tanpa struktur yang terlalu ringan justru akan membuatmu tidak nyaman karena pakaian-pakaian tersebut akan lebih mudah menempel pada kulitmu (dan lebih buruk lagi ketika kamu sedang berkeringat!). Untuk menghindari ini, kamu bisa memilih pakaian dengan jahitan yang jelas atau detail bordir yang cantik."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:paddingLeft="30dp" android:paddingRight="10dp"/>
+                <TextView
+                        android:text="5. Kenakan pakaian tanpa furing
+Furing adalah lapisan tipis yang biasa ditemukan di dalam jaket, gaun, atau rok. Pada dasarnya, keberadaan furing ini menambah lapisan pakaian dan membuat kulitmu semakin tertutupi dari angin luar (yang tentu saja menyejukkan). Jika itu belum terdengar buruk, furing biasanya menggunakan material sintetis yang tidak menyerap keringat."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="viewStart" android:paddingLeft="30dp" android:paddingRight="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_marginTop="10dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" app:srcCompat="@drawable/pic6_fashion_tiga"
+                        android:id="@+id/imageView5" android:layout_weight="1" android:layout_marginStart="50dp"
+                        android:layout_gravity="center" android:scaleType="fitCenter"/>
+                <TextView
+                        android:text="6. Kalau kamu harus melakukan layering, pilih pakaian dengan bahan ringan, transparan, atau yang dirajut secara terbuka
+Oke, tapi kalau kamu benar-benar harus melakukan layering, pastikan kamu pakai sesuatu yang ringan. Pakaian transparan seperti tulle atau outer yang menggunakan teknik rajut terbuka (open-weave knit) bisa menjadi pertimbangan yang baik."
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_marginTop="10dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp" app:srcCompat="@drawable/pic7_fashion_tiga"
+                        android:id="@+id/imageView5" android:layout_weight="1" android:layout_marginStart="50dp"
+                        android:layout_gravity="center" android:scaleType="fitCenter"/>
+                <TextView
+                        android:text="Kamu tahu apa yang paling menyenangkan dari musim panas? Memakai sandal sekarang menjadi suatu hal yang lumrah untuk dilakukan. Ucapkan selamat tinggal kepada heels dan sepatu tertutup milikmu dan sapa lah sandal nyaman ini. Agar tidak terlihat membosankan dan basic, kamu bisa memilih sandal dengan sol tebal atau strap panjang yang terlihat manis."
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:textAlignment="viewStart" android:padding="5dp"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="307dp"
+                    android:layout_height="100dp" android:id="@+id/textView10" android:visibility="visible"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"
+                    android:text="Lakukan saja ini dan kamu akan berterima kasih pada saya nanti. Karena percayalah tidak ada yang lebih mengganggu dari rambut lepek dan berkeringat yang menyentuh kulit wajah dan lehermu."
+                    android:layout_marginRight="10dp"/>
+            <TextView
+                    android:layout_width="303dp"
+                    android:layout_height="100dp" android:id="@+id/textView11" android:visibility="visible"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"
+                    android:text="Source : https://www.cosmopolitan.co.id/article/read/6/2021/25027/tips-ootd-anti-gerah-untuk-musim-panas"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

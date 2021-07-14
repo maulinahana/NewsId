@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22333B</color>
+    <color name="colorPrimaryDark">#182329</color>
+    <color name="newsCard">#FFFFFF</color> <!-- 80A4ED -->
+    <color name="newsCardDark">#bfbfbf</color> <!-- 395C6B -->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="mainBackground">#185ADB</color> <!-- 22333B -->
+    <color name="catButton">#FFFFFF</color> <!-- FFE19C -->
+    <color name="catButtonClicked">#FFC947</color> <!-- DB9D47 -->
+    <color name="newsCardShadow">#525252</color>
+    <color name="newsCardClickedShadow">#3b3b3b</color>
+</resources>

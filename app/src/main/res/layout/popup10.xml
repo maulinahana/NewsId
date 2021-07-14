@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/popup_10">
+
+    <TextView
+            android:text="Balenciaga Gelar Peragaan Busana dengan Model Kloningan"
+            android:layout_width="260dp"
+            android:layout_height="79dp" android:id="@+id/textView"
+            android:layout_marginEnd="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="55dp"
+            android:textAlignment="center" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2" android:textStyle="bold"/>
+
+    <Button
+            android:text="X"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:id="@+id/backButton"
+            android:layout_marginTop="570dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="274dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintVertical_bias="1.0" android:textSize="24sp"/>
+    <ScrollView
+            android:layout_width="393dp"
+            android:layout_height="477dp" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/backButton" android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintVertical_bias="1.0" android:id="@+id/scrollView2"
+            android:paddingRight="15dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:padding="10dp">
+            <ImageView
+                    android:layout_width="289dp"
+                    android:layout_height="181dp" app:srcCompat="@drawable/thumbnail_entertainment_tiga"
+                    android:id="@+id/imageView" android:layout_marginStart="40dp" android:layout_marginRight="15dp"/>
+            <TextView
+                    android:text="jpnn.com, JAKARTA - Ketua Asosiasi Perusahaan Film Indonesia (APFI) Chand Parwez menyambut baik kehadiran MNC Pictures dan Temata Studio dalam organisasi yang dipimpinnya itu."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Menurutnya, dengan bergabungnya dua rumah produksi itu, kerja sama antara perusahaan film di Indonesian akan makin kuat. 'Ini akan memperkuat usaha dan inisiatif APFI untuk bersama-sama mengembangkan industri perfilman di tanah air,' kata Chand dalam keterangan tertulis, Rabu (23/6)."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView3" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Hal senada juga disampaikan oleh Titan Hermawan, Direktur Utama MNC Pictures. Dia mengatakan bahwa MNC Pictures memiliki visi yang sama dan siap berkolaborasi."
+                    android:layout_width="305dp"
+                    android:layout_height="80dp" android:id="@+id/textView4" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+            <TextView
+                    android:text="Setelah itu, barulah Computer Graphic atau animator mengkloning wajah Douglas ke setiap model kloningan. Proses pasca produksi peragaan busana ini melibatkan banyak teknologi canggih agar gelaran tersebut terlihat nyata seperti peragaan busana lainnya."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="‘Fokus kami adalah bersama-sama meningkatkan kualitas film nasional baik dari sisi konten maupun produksinya,’ ujar Titan. Tesadesrada Ryza, Direktur Utama Temata Studio menambahkan tujuannya bergabung di APFI karena ingin turut memajukan industri film nasional dengan mengedepankan niliai-nilai kebangsaan."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView6" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="‘Semoga film Indonesia dapat menjadi media pemersatu bangsa dan representasi dari keberagaman budaya tanah air,’ tuturnya. Bergabungnya MNC Pictures dan Temata Studio menambah jumlah anggota APFI."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView7" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Kendati model yang berjalan di catwalk adalah kloningan, item fesyen yang ditampilkan sepenuhnya nyata, mulai dari busana bernuansa gelap, siluet blazer memanjang, hingga gaun kuning cerah"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView8" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Anggota yang sudah bergabung sebelumnya adalah Starvision, Max Pictures, Falcon Pictures, Rapi Film, Soraya Intercine Films, Mizan Pictures, Mahaka Pictures, Hitmaker, Screenplay Bumilangit, dan Visinema."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView9" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Source: https://www.jpnn.com/news/mnc-pictures-dan-temata-studio-resmi-bergabung-di-apfi"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView10" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

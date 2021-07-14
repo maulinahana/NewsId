@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/popup_9">
+
+    <TextView
+            android:text="Pelatih Republik Ceko Frustrasi Lihat Kecepatan Sterling dan Saka"
+            android:layout_width="260dp"
+            android:layout_height="79dp" android:id="@+id/textView"
+            android:layout_marginEnd="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="55dp"
+            android:textAlignment="center" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2" android:textStyle="bold"/>
+
+    <Button
+            android:text="X"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:id="@+id/backButton"
+            android:layout_marginTop="570dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="274dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintVertical_bias="1.0" android:textSize="24sp"/>
+    <ScrollView
+            android:layout_width="393dp"
+            android:layout_height="477dp" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/backButton" android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintVertical_bias="1.0" android:id="@+id/scrollView2"
+            android:paddingRight="15dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:padding="10dp">
+            <ImageView
+                    android:layout_width="289dp"
+                    android:layout_height="181dp" app:srcCompat="@drawable/thumbnail_sports_empat"
+                    android:id="@+id/imageView" android:layout_marginStart="40dp" android:layout_marginRight="15dp"/>
+            <TextView
+                    android:text="Republik Ceko takluk 0-1 saat menghadapi Inggris di matchday terakhir Grup D Piala Eropa 2020 . Pelatih Jaroslav Silhavy mengaku frustrasi melihat kecepatan Raheem Sterling dan Bukayo Saka."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Bermain di Stadion Wembley, London, Rabu (23/6/2021) waktu Indonesia, Republik Ceko takluk lewat gol tunggal Raheem Sterling pada menit ke-12. Namun, sejak menit pertama Sterling sudah merepotkan pertahanan mereka."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView3" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Pertandingan berlangsung di Stade de France, Saint-Denis, 10 Juli 2016. Ronaldo yang saat itu masih membela Real Madrid tampak bersemangat sejak awal laga. Akan tetapi, petaka hadir di menit ke-25. Ia harus ditandu keluar karena cedera usai berbenturan dengan gelandang Prancis, Dimitri Payet."
+                    android:layout_width="305dp"
+                    android:layout_height="80dp" android:id="@+id/textView4" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+            <TextView
+                    android:text="Memanfaatkan umpan terobosan, Sterling berlari meninggalkan barisan pertahanan Republik Ceko pada menit pertama. Tapi sayang, usaha mencetak gol belum berbuah hasil karena bola hasil sepakan Sterling cuma membentur tiang gawang."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Skema serangan yang dibangun mengandalkan kecepatan Sterling memang sering dipertontonkan Timnas Inggris. Tak cuma itu, skuat the Three Lions juga kerap bikin repot dengan mengandalkan kecepatan lari dari Bukayo Saka."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView6" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Menurut catatan Opta, Saka membuat lima take-on alias dribel di pertandingan melawan Republik Ceko. Cara menyerang yang mengandalkan kecepatan seperti itu yang tidak disukai oleh Republik Ceko."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView7" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="‘Ketika Saka dan Sterling berlari dengan bola, sangat sulit untuk menghentikan mereka,’ kata pelatih Republik Ceko, Jaroslav Silhavy dikutip laman UEFA, Rabu (23/6/2021)."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView8" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Meski kalah, Republik Ceko tetap mengantongi tiket babak 16 besar Piala Eropa 2020 dari jalur peringkat tiga terbaik. Mereka finis di posisi tiga Grup D dengan empat poin— cuma kalah selisih gol dari Kroasia."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView9" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="‘Kami lolos dengan satu pertandingan tersisa dan bersaing melawan Inggris untuk memperebutkan tempat pertama. Kami harus melihatnya secara positif,’ kata Jaroslav Silhavy."
+                    android:layout_width="305dp"
+                    android:layout_height="82dp" android:id="@+id/textView10" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Source: https://sports.sindonews.com/read/463892/11/pelatih-republik-ceko-frustrasi-lihat-kecepatan-sterling-dan-saka-1624421175"
+                    android:layout_width="305dp"
+                    android:layout_height="82dp" android:id="@+id/textView11" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

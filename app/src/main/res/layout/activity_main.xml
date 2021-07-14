@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp" tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/HeadlineLayout">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/BeritaBig"
+                android:clickable="true">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="10dp"
+                    android:id="@+id/CardView">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" app:srcCompat="@drawable/headline_thumbnail"
+                        android:background="@color/mainBackground"
+                        android:id="@+id/imageView" android:scaleType="centerCrop"/>
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="5 Artis Tak Puas dengan Peran\ndi Film, Padahal Laris Manis di Pasaran"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" android:fontFamily="sans-serif-black"
+                        android:layout_marginRight="20dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                        android:layout_marginLeft="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp" app:srcCompat="@drawable/trending_icon"
+                            android:id="@+id/imageView7" android:layout_weight="1"/>
+                    <TextView
+                            android:textColor="@android:color/white"
+                            android:text="Trending"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"
+                            android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </RelativeLayout>
+    <HorizontalScrollView
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/HeadlineLayout" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" android:id="@+id/NavButtonLayout">
+
+            <Button
+                    android:id="@+id/Cat1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="All News"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_animation"
+                    android:typeface="normal"
+                    app:backgroundTint="#00FFFFFF"/>
+
+            <Button
+                    android:id="@+id/Cat2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Entertainment"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_animation"
+                    android:typeface="normal"
+                    app:backgroundTint="#00FFFFFF"/>
+
+            <Button
+                    android:id="@+id/Cat3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Sports"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_animation"
+                    android:typeface="normal"
+                    app:backgroundTint="#00FFFFFF"/>
+
+            <Button
+                    android:id="@+id/Cat4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Fashion"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_animation"
+                    android:typeface="normal"
+                    app:backgroundTint="#00FFFFFF"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/navigationBar"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp" android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="5dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:paddingTop="5dp">
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp" app:srcCompat="@drawable/hot_icon"
+                        android:id="@+id/imageView7" android:layout_weight="1"/>
+                <TextView
+                        android:textColor="@android:color/white"
+                        android:text="Hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"
+                        android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita1"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:layout_marginTop="20dp" android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Fashion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Model Busana yang Harus Dihindari Kerena Bikin Tubuh Kelihatan Gemuk\ndan Besar"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_fashion_satu"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Perpaduan busana dan aksesoris secara tidak kita sadari dapat mempengaruhi bagaimana bentuk badan kita loh."
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita2"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Fashion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Gaya Memikat Meadow Walker, Anak Mending Paul Walker, Saat Hadiri Premier Film F9: Fast &amp; Furious 9"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_fashion_dua"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Meadow Walker, putri mendiang aktor Paul Walker, mencuri perhatian saat menghadiri premier film F9: Fast &amp; Furious 9 di Los Angeles, Amerika Serikat, pada Jumat lalu, lewat busana dan penampilan memikatnya"
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita3"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Entertainment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Perjuangan Karier Selena Gomez ini Patut Kita Teladani"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_entertainment_satu"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Cantik, muda dan berbakat, tentu saja adalah tiga kata yang menggambarkan penyanyi cantik Selena Gomez."
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita4"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Sports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Jadwal Euro 2020: Slovakia vs Spanyol"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_sports_satu"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Timnas Spanyol akan menjalani laga hidup mati saat menghadapi Slovakia di Grup E Euro 2020 (Euro 2021)"
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita5"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Sports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Laurel Hubbard, Atlet Transgender Pertama di Olimpiade"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_sports_dua"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Atlet angkat besi asal Selandia Baru, Laurel Hubbard, akan menjadi transgender pertama yang berkompetisi di Olimpiade."
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita6"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:layout_marginTop="20dp" android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Fashion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Tips OOTD Anti Gerah untuk Musim Panas"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_fashion_tiga"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Bulan Juni di Indonesia hanya berarti satu hal: Musim panas sudah dimulai dan kita semua harus bersiap untuk yang terburuk"
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita7"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Fashion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Balenciaga Gelar Peragaan Busana dengan Model Kloningan"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_fashion_empat"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Ada yang unik dari peluncuran koleksi rumah mode Balenciaga untuk musim semi 2022"
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita8"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Sport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Momen Ronaldo Mendadak Jadi Pelatih di Portugal vs Prancis"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_sports_tiga"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Cristiano Ronaldo punya kenangan indah di laga Portugal vs Prancis. Salah satunya saat berperan bak pelatih di final Euro 2016."
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita9"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Sports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Pelatih Republik Ceko Frustrasi Lihat Kecepatan Sterling dan Saka"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_sports_empat"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Republik Ceko takluk 0-1 saat menghadapi Inggris di matchday terakhir Grup D Piala Eropa 2020"
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Berita10"
+                    android:background="@drawable/button"
+                    android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                    android:paddingTop="5dp" android:paddingRight="13dp"
+                    android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                            android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                    <TextView
+                            android:text="Entertainment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            android:fontFamily="sans-serif-light" android:textColor="#000000"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="MNC Pictures dan Temata Studio Resmi Bergabung di APFI"
+                        android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#3E3E3E"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginTop="10dp">
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_entertainment_tiga"
+                            android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"/>
+                    <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="Ketua Asosiasi Perusahaan Film Indonesia (APFI) Chand Parwez menyambut baik kehadiran MNC Pictures dan Temata Studio dalam organisasi yang dipimpinnya itu."
+                            android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Berita11"
+                android:background="@drawable/button"
+                android:clickable="true" android:orientation="vertical" android:layout_weight="1"
+                android:paddingTop="5dp" android:paddingRight="13dp"
+                android:paddingBottom="13dp" android:paddingLeft="10dp" android:layout_marginTop="20dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="10dp">
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" app:srcCompat="@drawable/categories_icon"
+                        android:id="@+id/imageView3" android:layout_weight="1" android:layout_marginLeft="15dp"/>
+                <TextView
+                        android:text="Entertainment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                        android:fontFamily="sans-serif-light" android:textColor="#000000"
+                        android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Hiroyuki Sanada Aktor Scorpion di Mortal Kombat Gabung John Wick 4"
+                    android:textSize="17sp" android:textStyle="bold" android:textAllCaps="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#3E3E3E"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginTop="10dp">
+                <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="80dp" app:srcCompat="@drawable/thumbnail_entertainment_empat"
+                        android:id="@+id/imageView1" android:layout_weight="1" android:scaleType="centerCrop"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="Film laga John Wick 4 yang dibintangi oleh Keanu Reeves bakal kembali menampilkan aktor laga yang menjadi sorotan."
+                        android:textSize="12sp" android:layout_marginTop="5dp" android:textColor="#9A9A9A"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

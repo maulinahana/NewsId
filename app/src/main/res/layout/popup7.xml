@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/popup_7">
+
+    <TextView
+            android:text="Balenciaga Gelar Peragaan Busana dengan Model Kloningan"
+            android:layout_width="260dp"
+            android:layout_height="79dp" android:id="@+id/textView"
+            android:layout_marginEnd="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="55dp"
+            android:textAlignment="center" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2" android:textStyle="bold"/>
+
+    <Button
+            android:text="X"
+            android:layout_width="48dp"
+            android:layout_height="48dp" android:id="@+id/backButton"
+            android:layout_marginTop="570dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="274dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintVertical_bias="1.0" android:textSize="24sp"/>
+    <ScrollView
+            android:layout_width="393dp"
+            android:layout_height="477dp" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/backButton" android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintVertical_bias="1.0" android:id="@+id/scrollView2"
+            android:paddingRight="15dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:padding="10dp">
+            <ImageView
+                    android:layout_width="289dp"
+                    android:layout_height="181dp" app:srcCompat="@drawable/thumbnail_fashion_empat"
+                    android:id="@+id/imageView" android:layout_marginStart="40dp" android:layout_marginRight="15dp"/>
+            <TextView
+                    android:text="Ada yang unik dari peluncuran koleksi rumah mode Balenciaga untuk musim semi 2022. Peragaan busana yang memamerkan koleksi bertajuk 'Balenciaga Clones' itu seolah mengaburkan batasan antara kenyataan dan imajinasi"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Direktur kreatif Balenciaga, Demna Gvasalia memiliki ide untuk menggelar peragaan busana dengan mengkloning satu orang model. Ide tersebut dieksekusi oleh sutradara Quentin Deronzier. Seorang model bernama Eliza Douglas, dikopi alias dikloning secara digital untuk menghasilkan 44 pria dan wanita 'tiruan'."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView3" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Dalam mengimplementasikan ide itu, Deronzier harus membuat agar setiap tubuh tiruan memiliki cara berjalan yang sama seperti Douglas."
+                    android:layout_width="305dp"
+                    android:layout_height="80dp" android:id="@+id/textView4" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+            <ImageView
+                    android:layout_width="289dp"
+                    android:layout_height="181dp" app:srcCompat="@drawable/pic1_fashion_empat"
+                    android:id="@+id/imageView2" android:layout_marginStart="40dp" android:layout_marginRight="15dp"/>
+
+            <TextView
+                    android:text="Setelah itu, barulah Computer Graphic atau animator mengkloning wajah Douglas ke setiap model kloningan. Proses pasca produksi peragaan busana ini melibatkan banyak teknologi canggih agar gelaran tersebut terlihat nyata seperti peragaan busana lainnya."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Teknologi yang dimaksud meliputi pelacakan planar, rotoscoping (teknik yang digunakan animator untuk menjiplak gerakan model pada rekaman film), machine learning, dan 3D modeling."
+                    android:layout_width="305dp"
+                    android:layout_height="112dp" android:id="@+id/textView6" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Seperti dilaporkan WWD, Gvasalia mengklaim upaya Balenciaga membuat kloningan Douglas adalah bentuk keseragaman tren dan menghilangkan perbedaan individualitas setiap model. Sementara itu, presentasi video dibuat untuk mengajak masyarakat merenungkan kebiasaan menatap layar."
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView7" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Kendati model yang berjalan di catwalk adalah kloningan, item fesyen yang ditampilkan sepenuhnya nyata, mulai dari busana bernuansa gelap, siluet blazer memanjang, hingga gaun kuning cerah"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView8" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Terlihat kaus yang menampilkan karakter The Simpsons dari koleksi yang dipamerkan Balenciaga di musim lalu, Crocs berwarna cerah, dan aksesori yang menghiasi kemasan makanan cepat saji. Tidak ketinggalan, item rancangan Balenciaga seperti puffer jacket, hoodie, hingga trench coat"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView9" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+            <TextView
+                    android:text="Source: https://lifestyle.kompas.com/read/2021/06/08/124326020/balenciaga-gelar-peragaan-busana-dengan-model-kloningan"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView10" android:visibility="visible"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" android:padding="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
